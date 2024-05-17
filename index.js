@@ -18,3 +18,17 @@ document.querySelector("nav input").onclick = function () {
   if (this.checked) this.setAttribute("aria-expanded", true);
   else this.setAttribute("aria-expanded", false);
 };
+
+// loading screen
+
+document.onreadystatechange = function () {
+  var state = document.readyState;
+  document.getElementById("nav").classList.add("hidden");
+  if (state == "complete") {
+    setTimeout(function () {
+      document.getElementById("interactive");
+      document.getElementById("loading").style.visibility = "hidden";
+      document.getElementById("nav").classList.remove("hidden");
+    }, 1000);
+  }
+};
