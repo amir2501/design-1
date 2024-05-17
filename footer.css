@@ -121,6 +121,11 @@ footer {
       display: block;
     }
   }
+  
+  #last-span {
+    display: none;
+  }
+  
   #bottom {
     padding: 1rem;
 
