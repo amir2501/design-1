@@ -27,7 +27,7 @@ document.onreadystatechange = function () {
   if (state == "complete") {
     setTimeout(function () {
       document.getElementById("interactive");
-      document.getElementById("loading").style.visibility = "hidden";
+      document.getElementById("loading").style.display = "none";
       document.getElementById("nav").classList.remove("hidden");
     }, 1000);
   }
